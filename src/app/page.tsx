@@ -61,7 +61,7 @@ const Home = () => {
           </div>
         )}
         {data &&
-          (areAllValuesNull(omitKey(data, "rain_accumulation")) ? (
+          (areAllValuesNull(omitKey(data, "rain_intensity")) ? (
             <p className="text-gray-300 mt-5 text-center text-sm sm:text-base ">
               No information available for this location.
             </p>
@@ -100,9 +100,9 @@ const Home = () => {
                 />
                 <PropertyCard
                   IconComponent={BsCloudRainHeavy}
-                  name="Rain Intensity"
-                  property={data.rain_intensity}
-                  unit="mm/min"
+                  name="Rain Accumulation"
+                  property={data.rain_accumulation}
+                  unit="mm"
                 />
               </div>
             </>
