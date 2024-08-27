@@ -72,7 +72,7 @@ const Home = () => {
                 <div>
                   <p className="text-sm">Temperature</p>
                   <p className="font-bold text-4xl">
-                    {data.temperature
+                    {data.temperature !== null
                       ? `${data.temperature.toFixed(2)} °C`
                       : "N/A"}{" "}
                   </p>

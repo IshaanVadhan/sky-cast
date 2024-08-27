@@ -18,7 +18,7 @@ const PropertyCard = ({
       <div className="flex flex-col gap-0 items-start flex-1 text-md md:text-lg font-medium">
         <p className="text-xs">{name}</p>
         <p className="text-lg">
-          {property ? `${property.toFixed(2)} ${unit}` : "N/A"}
+          {property !== null ? `${property.toFixed(2)} ${unit}` : "N/A"}
         </p>
       </div>
     </div>
